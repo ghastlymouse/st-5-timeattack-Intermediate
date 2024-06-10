@@ -8,8 +8,7 @@ function App() {
     <>
       <h1>투두리스트 타임어택</h1>
       <TodoForm />
-      <TodoList isDone={false} />
-      <TodoList isDone={true} />
+      <TodoList />
     </>
   );
 }

@@ -8,11 +8,11 @@ export default function TodoItem({ todo }) {
   const { id, title, content, isDone } = todo;
 
   const handleClickDeleteBtn = (id) => {
-    dispatch(deleteTodo({ id }));
+    dispatch(deleteTodo(id));
   }
 
   const handleClickToggleBtn = (id) => {
-    dispatch(toggleTodo({ id }));
+    dispatch(toggleTodo(id));
   };
 
   return (

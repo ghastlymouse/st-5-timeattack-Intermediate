@@ -13,11 +13,11 @@ const todoSlice = createSlice({
       state.todos.push(action.payload);
     },
     deleteTodo: (state, action) => {
-      state.todos = state.todos.filter((todo) => todo.id !== action.payload.id);
+      state.todos = state.todos.filter((todo) => todo.id !== action.payload);
     },
     toggleTodo: (state, action) => {
       state.todos = state.todos.map((todo) =>
-        todo.id === action.payload.id ? { ...todo, isDone: !todo.isDone } : todo
+        todo.id === action.payload ? { ...todo, isDone: !todo.isDone } : todo
       );
     },
   },
